@@ -5,7 +5,7 @@ This project implements a **Denoising Diffusion Probabilistic Model** in PyTorch
 
 ---
 
-# Selected Diffusion Model Sample Progression
+## Selected Diffusion Model Sample Progression
 
 Note: I stopped training at the 13th epoch when I saw decent enough patterns from the 10 classes appearing.
 
