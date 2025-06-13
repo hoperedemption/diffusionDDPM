@@ -7,11 +7,7 @@ This project implements a **Denoising Diffusion Probabilistic Model** in PyTorch
 
 # Selected Diffusion Model Sample Progression
 
-Note: I stopped training at the 13 th epoch when I saw decent enough patterns from the 10 classes appearing.
-
-<p style="text-align: center; font-size: 1.1em; color: #555;">
-  This table highlights a selection of generated images from different stages of the model's training, showcasing key points in its learning progression from initial noise to higher fidelity.
-</p>
+Note: I stopped training at the 13th epoch when I saw decent enough patterns from the 10 classes appearing.
 
 <table align="center"; style="width: 80%; border-collapse: collapse; margin: 20px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
   <thead>
