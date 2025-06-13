@@ -64,14 +64,16 @@ This class manages the two main phases of a DDPM: the fixed forward process and 
 
 * **Forward Diffusion Process :**
     This is a predefined, non-learnable process that gradually adds Gaussian noise to a clean image $x_0$ over $T$ timesteps. The noisy image at timestep $t$, $x_t$, is obtained by:
-    $$x_t = \sqrt{\bar{\alpha}_t}x_0 + \sqrt{1 - \bar{\alpha}_t}\epsilon$$
-    where $\epsilon \sim \mathcal{N}(0, I)$ is pure Gaussian noise, and $\bar{\alpha}_t = \prod_{s=1}^t (1 - \beta_s)$. The values $\beta_s$ are determined by the chosen **noise schedule**.
+```math
+  x_t = \sqrt{\bar{\alpha}_t}x_0 + \sqrt{1 - \bar{\alpha}_t}\epsilon
+```math
+    where $\epsilon \sim \mathcal{N}(0, I)$ is pure Gaussian noise, and ```math \bar{\alpha}_t = \prod_{s=1}^t (1 - \beta_s)```math. The values ```math\beta_s```math are determined by the chosen **noise schedule**.
 
 * **Reverse Denoising Process :**
-    This is the learned process where the model iteratively removes noise to transform a noisy image $x_t$ back to a clean image $x_0$. The U-Net model predicts the noise $\epsilon_\theta(x_t, t)$, which is then used to estimate the mean and variance of the reverse Gaussian transition $p_\theta(x_{t-1}|x_t)$.
+    This is the learned process where the model iteratively removes noise to transform a noisy image ```mathx_t```math back to a clean image ```mathx_0```math. The U-Net model predicts the noise ```math\epsilon_\theta(x_t, t)```math, which is then used to estimate the mean and variance of the reverse Gaussian transition ```mathp_\theta(x_{t-1}|x_t)```math.
     The predicted mean $\mu_\theta(x_t, t)$ is typically parameterized as:
-    $$\mu_\theta(x_t, t) = \frac{1}{\sqrt{\alpha_t}} \left( x_t - \frac{\beta_t}{\sqrt{1 - \bar{\alpha}_t}} \epsilon_\theta(x_t, t) \right)$$
-    The variance $\Sigma_\theta(x_t, t)$ is usually fixed to $\beta_t I$ or $\tilde{\beta}_t I$, where $\tilde{\beta}_t = \frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \beta_t$.
+    ```math\mu_\theta(x_t, t) = \frac{1}{\sqrt{\alpha_t}} \left( x_t - \frac{\beta_t}{\sqrt{1 - \bar{\alpha}_t}} \epsilon_\theta(x_t, t) \right)```math
+    The variance ```math\Sigma_\theta(x_t, t)```math is usually fixed to ```math\beta_t I```math or ```math\tilde{\beta}_t I```math, where ```math\tilde{\beta}_t = \frac{1 - \bar{\alpha}_{t-1}}{1 - \bar{\alpha}_t} \beta_t```math.
 
 * **Training Loss Calculation :**
     The model is trained to minimize a **simplified variational bound**, which simplifies to a Mean Squared Error (MSE) loss. Specifically, the U-Net is trained to predict the noise $\epsilon$ that was added to create $x_t$ from $x_0$.
