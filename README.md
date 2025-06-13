@@ -11,7 +11,7 @@ This project implements a **Denoising Diffusion Probabilistic Model** in PyTorch
   This table highlights a selection of generated images from different stages of the model's training, showcasing key points in its learning progression from initial noise to higher fidelity.
 </p>
 
-<table style="width: 80%; border-collapse: collapse; margin: 20px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
+<table align="center"; style="width: 80%; border-collapse: collapse; margin: 20px auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border-radius: 12px; overflow: hidden;">
   <thead>
     <tr style="background-color: #f9f9f9;">
       <th colspan="2" style="padding: 15px; text-align: center; font-size: 1.2em; color: #333; border-bottom: 2px solid #eee;">Generated Samples</th>
