@@ -25,27 +25,27 @@ This project implements a **Denoising Diffusion Probabilistic Model** in PyTorch
       </td>
       <td style="width: 50%; padding: 15px; text-align: center; vertical-align: middle;">
         <p style="font-size: 0.9em; color: #777; margin-bottom: 5px;">Epoch 5</p>
-        <img src="src/results/DDPM_conditional/samples/sample_005.png" alt="Epoch 5 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+        <img src="src/results/DDPM_conditional/samples/sample_epoch_005.png" alt="Epoch 5 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
       </td>
     </tr>
     <tr>
       <td style="width: 50%; padding: 15px; border-right: 1px solid #eee; text-align: center; vertical-align: middle;">
         <p style="font-size: 0.9em; color: #777; margin-bottom: 5px;">Epoch 10</p>
-        <img src="src/results/DDPM_conditional/samples/sample_010.png" alt="Epoch 10 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+        <img src="src/results/DDPM_conditional/samples/sample_epoch_010.png" alt="Epoch 10 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
       </td>
       <td style="width: 50%; padding: 15px; text-align: center; vertical-align: middle;">
         <p style="font-size: 0.9em; color: #777; margin-bottom: 5px;">Epoch 11</p>
-        <img src="src/results/DDPM_conditional/samples/sample_011.png" alt="Epoch 11 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+        <img src="src/results/DDPM_conditional/samples/sample_epoch_011.png" alt="Epoch 11 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
       </td>
     </tr>
     <tr>
       <td style="width: 50%; padding: 15px; border-right: 1px solid #eee; text-align: center; vertical-align: middle;">
         <p style="font-size: 0.9em; color: #777; margin-bottom: 5px;">Epoch 12</p>
-        <img src="src/results/DDPM_conditional/samples/sample_012.png" alt="Epoch 12 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+        <img src="src/results/DDPM_conditional/samples/sample_epoch_012.png" alt="Epoch 12 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
       </td>
       <td style="width: 50%; padding: 15px; text-align: center; vertical-align: middle;">
         <p style="font-size: 0.9em; color: #777; margin-bottom: 5px;">Epoch 13</p>
-        <img src="src/results/DDPM_conditional/samples/sample_013.png" alt="Epoch 13 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
+        <img src="src/results/DDPM_conditional/samples/sample_epoch_013.png" alt="Epoch 13 Sample" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.15);">
       </td>
     </tr>
   </tbody>
