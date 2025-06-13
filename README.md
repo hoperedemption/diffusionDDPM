@@ -1,5 +1,6 @@
 
-## Denoising Diffusion Probabilistic Model (DDPM) Exploration Project
+---
+# Denoising Diffusion Probabilistic Model (DDPM) Exploration Project
 
 This project implements a **Denoising Diffusion Probabilistic Model** in PyTorch, focusing on generating high-quality images. It includes robust features for **training efficiency, reproducibility, and comprehensive experiment tracking**, along with a flexible architecture for conditional image generation.
 
