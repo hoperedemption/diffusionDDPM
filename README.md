@@ -1,11 +1,13 @@
 
 # Denoising Diffusion Probabilistic Model (DDPM) Exploration Project
 
-This project implements a **Denoising Diffusion Probabilistic Model** in PyTorch, focusing on generating high-quality images. It includes robust features for **training efficiency, reproducibility, and comprehensive experiment tracking**, along with a flexible architecture for conditional image generation.
+This project implements a **Denoising Diffusion Probabilistic Model** in PyTorch, focusing on generating high-quality images, trained on the CIFAR-10 dataset. It includes robust features for **training efficiency, reproducibility, and comprehensive experiment tracking**, along with a flexible architecture for conditional image generation.
 
 ---
 
 # Selected Diffusion Model Sample Progression
+
+Note: I stopped training at the 13 th epoch where I saw decent enough patterns from the 10 classes started to appear.
 
 <p style="text-align: center; font-size: 1.1em; color: #555;">
   This table highlights a selection of generated images from different stages of the model's training, showcasing key points in its learning progression from initial noise to higher fidelity.
