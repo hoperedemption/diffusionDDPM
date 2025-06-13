@@ -90,7 +90,7 @@ This class manages the two main phases of a DDPM: the fixed forward process and 
 
 ### Noise Schedules
 
-The way noise is introduced during the forward process is crucial. This project supports two common schedules for generating `beta_t` values:
+The way noise is introduced during the forward process is very important. This project supports two common schedules for generating `beta_t` values:
 
 * **Linear Schedule**: `beta_t` increases linearly from a starting value (`beta_start`) to an ending value (`beta_end`) over `T` timesteps.
     `beta_t = beta_start + ((t-1) / (T-1)) * (beta_end - beta_start)`
