@@ -51,9 +51,6 @@ This project implements a **Denoising Diffusion Probabilistic Model** in PyTorch
   </tbody>
 </table>
 
-<p style="text-align: center; font-size: 0.9em; color: #777;">
-  <em>Note: Ensure the image files (e.g., <code>sample_000.png</code>) are located in a folder named <code>samples/</code> relative to this markdown file for the images to display.</em>
-</p>
 
 ---
 
